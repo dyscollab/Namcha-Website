@@ -7,7 +7,7 @@ export default function Hero() {
       {/* Background image */}
       <div
         className="absolute inset-0 bg-cover bg-center"
-        style={{ backgroundImage: 'url(/assets/hero-bg.jpg)' }}
+        style={{ backgroundImage: `url(${import.meta.env.BASE_URL}assets/hero-bg.jpg)` }}
       />
 
       {/* Gradient overlay */}

@@ -33,7 +33,7 @@ export default function Navbar() {
         {/* Logo */}
         <a href="#hero" className="flex items-center gap-3 no-underline" onClick={closeMenu}>
           <img
-            src="/assets/logo.png"
+            src={`${import.meta.env.BASE_URL}assets/logo.png`}
             alt="Namcha logo"
             className={`h-12 w-auto transition-all duration-300 ${
               scrolled ? '' : 'brightness-0 invert'

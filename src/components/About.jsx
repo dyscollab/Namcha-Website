@@ -26,7 +26,7 @@ export default function About() {
 
           <div className="relative rounded-3xl overflow-hidden shadow-2xl aspect-[4/5] bg-gradient-to-br from-namcha-blue/20 to-namcha-lavender/30">
             <img
-              src="/assets/about-img.jpg"
+              src={`${import.meta.env.BASE_URL}assets/about-img.jpg`}
               alt="Butterfly pea flowers on the vine"
               className="w-full h-full object-cover"
               onError={(e) => {

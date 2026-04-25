@@ -59,7 +59,7 @@ export default function Contact() {
           {/* Logo / wordmark */}
           <div className="flex items-center gap-3 mb-6">
             <img
-              src="/assets/logo.png"
+              src={`${import.meta.env.BASE_URL}assets/logo.png`}
               alt="Namcha"
               className="h-10 w-auto brightness-0 invert"
               onError={(e) => { e.target.style.display = 'none' }}
