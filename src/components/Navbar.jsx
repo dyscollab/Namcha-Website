@@ -26,7 +26,7 @@ export default function Navbar() {
       className={`sticky top-0 z-50 w-full transition-all duration-300 ${
         scrolled
           ? 'bg-namcha-cream/95 backdrop-blur-sm shadow-sm'
-          : 'bg-transparent'
+          : 'bg-gradient-to-b from-namcha-navy/60 to-transparent'
       }`}
     >
       <nav className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
