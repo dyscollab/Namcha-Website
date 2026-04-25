@@ -4,11 +4,16 @@ on:
   push:
     branches: [main]
 
+permissions:
+  contents: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+          - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Setup Node
         uses: actions/setup-node@v4
@@ -20,11 +25,11 @@ jobs:
 
       - name: Build
         run: npm run build
-
-      - name: Configure Git
+              - name: Configure Git
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
