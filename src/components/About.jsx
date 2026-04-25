@@ -2,7 +2,7 @@ import useInView from '../hooks/useInView'
 
 const stats = [
   { label: '100% Pure',     icon: '✦' },
-  { label: 'Direct-Trade',  icon: '✦' },
+  { label: 'High Quality',  icon: '✦' },
   { label: 'No Fillers',    icon: '✦' },
 ]
 
@@ -27,7 +27,7 @@ export default function About() {
           <div className="relative rounded-3xl overflow-hidden shadow-2xl aspect-[4/5] bg-gradient-to-br from-namcha-blue/20 to-namcha-lavender/30">
             <img
               src="/assets/about-img.jpg"
-              alt="Butterfly pea flowers being harvested"
+              alt="Butterfly pea flowers on the vine"
               className="w-full h-full object-cover"
               onError={(e) => {
                 e.target.parentElement.classList.add('flex', 'items-center', 'justify-center')
@@ -60,7 +60,7 @@ export default function About() {
           </p>
 
           <p className="font-body text-namcha-earth/80 leading-relaxed mb-5">
-            At Namcha, we source exclusively from small family farms, where flowers are hand-picked at peak bloom and sun-dried to preserve every antioxidant. No fillers, no additives — just the flower.
+            At Namcha, we source the higest quality flowers and use a refined extraction processes to preserve every antioxidant. No fillers, no additives — just the flower.
           </p>
 
           <p className="font-body text-namcha-earth/80 leading-relaxed mb-10">

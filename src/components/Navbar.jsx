@@ -11,6 +11,7 @@ const links = [
 export default function Navbar() {
   const [scrolled, setScrolled]     = useState(false)
   const [menuOpen, setMenuOpen]     = useState(false)
+  const [logoLoaded, setLogoLoaded] = useState(false)
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 80)
@@ -34,16 +35,21 @@ export default function Navbar() {
           <img
             src="/assets/logo.png"
             alt="Namcha logo"
-            className="h-10 w-auto"
+            className={`h-12 w-auto transition-all duration-300 ${
+              scrolled ? '' : 'brightness-0 invert'
+            }`}
+            onLoad={() => setLogoLoaded(true)}
             onError={(e) => { e.target.style.display = 'none' }}
           />
-          <span
-            className={`font-display text-2xl font-bold tracking-wide transition-colors duration-300 ${
-              scrolled ? 'text-namcha-navy' : 'text-white'
-            }`}
-          >
-            Namcha
-          </span>
+          {!logoLoaded && (
+            <span
+              className={`font-display text-2xl font-bold tracking-wide transition-colors duration-300 ${
+                scrolled ? 'text-namcha-navy' : 'text-white'
+              }`}
+            >
+              Namcha
+            </span>
+          )}
         </a>
 
         {/* Desktop links */}
