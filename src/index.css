@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: #F7F3EE;
+    color: #4A3A2A;
+    font-family: 'DM Sans', Inter, system-ui, sans-serif;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: 'Playfair Display', Georgia, serif;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-block px-8 py-3 bg-namcha-blue text-white font-body font-semibold
+           rounded-full hover:bg-namcha-navy transition-colors duration-300 cursor-pointer
+           text-center no-underline;
+  }
+
+  .btn-outline {
+    @apply inline-block px-8 py-3 border-2 border-white text-white font-body font-semibold
+           rounded-full hover:bg-white hover:text-namcha-navy transition-colors duration-300
+           cursor-pointer text-center no-underline;
+  }
+
+  .btn-outline-blue {
+    @apply inline-block px-8 py-3 border-2 border-namcha-blue text-namcha-blue font-body
+           font-semibold rounded-full hover:bg-namcha-blue hover:text-white transition-colors
+           duration-300 cursor-pointer text-center no-underline;
+  }
+
+  .section-heading {
+    @apply font-display text-4xl md:text-5xl font-bold text-namcha-navy mb-4;
+  }
+
+  .section-subheading {
+    @apply font-body text-namcha-earth/70 text-lg max-w-xl mx-auto mb-12;
+  }
+}
+
+@layer utilities {
+  .fade-in-up {
+    opacity: 0;
+    transform: translateY(2rem);
+    transition: opacity 0.65s ease-out, transform 0.65s ease-out;
+  }
+
+  .fade-in-up.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes colorShift {
+  0%   { background: radial-gradient(circle at 40% 35%, #7AAAE8, #5887DA, #1E3E8A); }
+  40%  { background: radial-gradient(circle at 40% 35%, #A99EE8, #8B9EE8, #5060C0); }
+  70%  { background: radial-gradient(circle at 40% 35%, #C580A8, #C060A0, #803060); }
+  100% { background: radial-gradient(circle at 40% 35%, #E08AA3, #D4688A, #9B3D6B); }
+}
+
+@keyframes floatBob {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(-10px); }
+}
+
+.liquid-shift {
+  animation: colorShift 5s ease-in-out infinite alternate;
+}
+
+.float-bob {
+  animation: floatBob 3s ease-in-out infinite;
+}
