@@ -117,7 +117,7 @@ export default function ColorShift() {
               {/* Custom thumb */}
               <div
                 className="absolute top-1/2 w-4 h-4 rounded-full bg-white shadow-md pointer-events-none -translate-y-1/2 -translate-x-1/2"
-                style={{ left: `calc(${ph}% * (100% - 1rem) / 100 + 0.5rem)` }}
+                style={{ left: `calc(${ph / 100} * (100% - 1rem) + 0.5rem)` }}
               />
             </div>
           </div>
