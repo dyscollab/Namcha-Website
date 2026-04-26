@@ -23,7 +23,7 @@ const benefits = [
     icon: '✨',
     title: 'Skin & Hair Benefits',
     description:
-      'Rich in flavonoids that support collagen production and promote scalp health, making Namcha beautiful inside and out.',
+      'Rich in bioflavonoids that support collagen production and promote scalp health, making Namcha beautiful inside and out.',
   },
   {
     icon: '🌿',
@@ -35,7 +35,7 @@ const benefits = [
     icon: '🍹',
     title: 'Endlessly Versatile',
     description:
-      'Teas, lattes, cocktails, pasta, baked goods — Namcha powder adds drama and nutrition to just about anything.',
+      'Teas, lattes, cocktails, pasta, baked goods — Namcha powder adds excitement and nutrition to just about anything.',
   },
 ]
 

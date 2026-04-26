@@ -24,11 +24,11 @@ export default function ProductShowcase() {
           </p>
         </div>
 
-        {/* Product grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {products.map((product, index) => (
-            <ProductCard key={product.id} product={product} delay={index * 150} />
-          ))}
+        {/* Product */}
+        <div className="flex justify-center">
+          <div className="w-full max-w-sm">
+            <ProductCard product={products[0]} />
+          </div>
         </div>
       </div>
     </section>

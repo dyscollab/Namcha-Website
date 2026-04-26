@@ -36,7 +36,7 @@ export default function Hero() {
           <a href="#products" className="btn-primary px-10 py-3.5">
             Shop Now
           </a>
-          <a href="#about" className="btn-outline px-10 py-3.5">
+          <a href="#benefits" className="btn-outline px-10 py-3.5">
             Learn More
           </a>
         </div>

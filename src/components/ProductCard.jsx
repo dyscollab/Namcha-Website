@@ -50,7 +50,7 @@ export default function ProductCard({ product, delay = 0 }) {
           {product.description}
         </p>
 
-        <a href="#contact" className="btn-primary text-sm px-6 py-2.5">
+        <a href="#benefits" className="btn-primary text-sm px-6 py-2.5">
           Learn More
         </a>
       </div>
