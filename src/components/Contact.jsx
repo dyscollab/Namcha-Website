@@ -19,18 +19,10 @@ function TikTokIcon() {
   )
 }
 
-function FacebookIcon() {
-  return (
-    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-      <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/>
-    </svg>
-  )
-}
 
 const socials = [
-  { label: 'Instagram', href: '#', Icon: InstagramIcon },
-  { label: 'TikTok',    href: '#', Icon: TikTokIcon    },
-  { label: 'Facebook',  href: '#', Icon: FacebookIcon  },
+  { label: 'Instagram', href: 'https://www.instagram.com/namcha.cafe/',                          Icon: InstagramIcon },
+  { label: 'TikTok',    href: 'https://www.tiktok.com/@namcha.cafe?_r=1&_t=ZS-96GCLvyJJAG',    Icon: TikTokIcon    },
 ]
 
 export default function Contact() {
@@ -68,7 +60,7 @@ export default function Contact() {
           </div>
 
           <p className="font-display text-white/60 italic text-lg mb-8">
-            "Colour Your World"
+            100% all-natural butterfly pea powder 
           </p>
 
           <p className="font-body text-white/60 text-sm leading-relaxed mb-8 max-w-xs">
@@ -76,10 +68,10 @@ export default function Contact() {
           </p>
 
           <a
-            href="mailto:hello@namcha.ca"
+            href="mailto:namcha.cafe.1@gmail.com"
             className="font-body text-namcha-lavender hover:text-white transition-colors text-sm no-underline block mb-10"
           >
-            hello@namcha.ca
+            Email Us!
           </a>
 
           {/* Social links */}
@@ -89,6 +81,8 @@ export default function Contact() {
                 key={label}
                 href={href}
                 aria-label={label}
+                target="_blank"
+                rel="noreferrer"
                 className="w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center text-white/70 hover:text-white transition-all duration-300 no-underline"
               >
                 <Icon />
