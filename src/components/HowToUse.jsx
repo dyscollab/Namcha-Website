@@ -114,7 +114,7 @@ export default function HowToUse() {
           </p>
           <h2 className="section-heading">Make It Your Own</h2>
           <p className="section-subheading">
-            Four simple steps to your first cup of Namcha — then explore a world of new recipes.
+            Four simple steps to make your first cup of Namcha — then explore a world of new recipes.
           </p>
         </div>
 
