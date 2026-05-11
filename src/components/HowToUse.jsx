@@ -17,13 +17,13 @@ const steps = [
     step: '03',
     icon: '👁️',
     title: 'Watch',
-    description: 'The liquid blooms to a deep blue. Squeeze lemon or add hibiscus to shift it to violet or pink.',
+    description: 'The liquid blooms to a deep blue. Squeeze lemon or add hibiscus to change colours to violet or pink.',
   },
   {
     step: '04',
     icon: '🍵',
     title: 'Enjoy',
-    description: 'Sip as a latte, iced tea, cocktail base, or fold into smoothies, bakes, and pastas.',
+    description: 'Sip as a latte, iced tea, cocktail base, or fold into smoothies, and bakes.',
   },
 ]
 
@@ -43,11 +43,11 @@ const recipes = [
     description: 'Mix Namcha in sparkling water, squeeze lemon, watch it turn pink.',
   },
   {
-    name: 'Butterfly Pea Pasta',
-    prep: '20 min',
+    name: 'Butterfly Pea Sticky Rice',
+    prep: '30 min',
     tag: 'Creative',
     tagColor: 'text-namcha-sage bg-namcha-sage/10',
-    description: 'Add 1 tbsp to your pasta dough for a stunning natural blue colour.',
+    description: 'Add 1 tbsp Namcha to your rice water before cooking for a stunning natural blue colour.',
   },
 ]
 
@@ -114,7 +114,7 @@ export default function HowToUse() {
           </p>
           <h2 className="section-heading">Make It Your Own</h2>
           <p className="section-subheading">
-            Four simple steps to your first Namcha creation — then explore a world of recipes.
+            Four simple steps to your first cup of Namcha — then explore a world of new recipes.
           </p>
         </div>
 
